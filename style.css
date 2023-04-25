@@ -2,16 +2,16 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+:after,
+:before {
+    box-sizing: border-box;
 }
 
 body {
-    margin: 20px;
+    margin: 30px;
     font-family: 'EB Garamond', serif;
     font-size: 20px;
+    line-height: 2;
 }
 
 img {
@@ -26,6 +26,7 @@ h1 {
     color: white;
     text-align: center;
     border-radius: 20%;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7)
 }
 
 .menu {
@@ -36,6 +37,7 @@ h1 {
     margin: 3px;
     position: sticky;
     top: 0px;
+    z-index: 1
 }
 
 .menu li {
@@ -66,4 +68,123 @@ h3 {
     background-color: rgb(200, 229, 200);
     padding: 15px;
     border-radius: 20%;
+}
+
+.fotoOmne {
+    float: left;
+    margin: 20px;
+    border-radius: 30px 0px 30px 30px;
+}
+
+section {
+    overflow: auto;
+}
+
+.fotoWariapaddy {
+    float: right;
+    margin: 20px;
+    border-radius: 30px 30px 30px 0;
+    overflow: auto;
+}
+
+.wari {
+    clear: both;
+}
+
+.wari img {
+    border-radius: 30px;
+}
+
+.paddy img {
+    border-radius: 30px;
+}
+
+div .fotoWari,
+.fotoPaddy {
+    text-align: center;
+}
+
+footer {
+    background: rgb(2, 90, 2);
+    margin: 0px;
+    color: white;
+    text-align: center;
+    border-radius: 20%;
+}
+
+.bigCircle {
+    display: flex;
+    border: 3px solid rgb(127, 111, 111);
+    padding: 80px 30px;
+    margin: 30px auto;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.circle1 {
+    border: 3px solid rgb(127, 111, 111);
+    position: absolute;
+    width: 70px;
+    padding: 20px;
+    border-radius: 50%;
+    left: 4%;
+    top: 10%;
+    background-color: white;
+    align-self: stretch;
+}
+
+.circle2 {
+    border: 3px solid rgb(127, 111, 111);
+    position: absolute;
+    margin: auto;
+    width: 40px;
+    padding: 13px 13px;
+    border-radius: 50%;
+    left: -2%;
+    top: 0%;
+}
+
+.circle3 {
+    border: 3px solid rgb(127, 111, 111);
+    position: absolute;
+    width: 70px;
+    padding: 25px;
+    border-radius: 50%;
+    left: 10%;
+    top: 5%;
+    background-color: white;
+}
+
+.circle4 {
+    border: 3px solid rgb(127, 111, 111);
+    position: absolute;
+    width: 40px;
+    padding: 13px 13px;
+    border-radius: 50%;
+    left: 5%;
+    top: -5%;
+}
+
+.circle5 {
+    border: 3px solid rgb(127, 111, 111);
+    position: absolute;
+    width: 70px;
+    padding: 25px;
+    border-radius: 50%;
+    right: 7%;
+    top: 5%;
+    background-color: white;
+}
+
+
+
+.circle6 {
+    border: 3px solid rgb(127, 111, 111);
+    position: absolute;
+    width: 40px;
+    padding: 13px 13px;
+    border-radius: 50%;
+    right: 0%;
+    top: -5%;
 }
